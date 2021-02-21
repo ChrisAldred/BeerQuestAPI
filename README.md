@@ -5,7 +5,7 @@ Beer Quest API is a queryable API that exposes the Beer Quest data set, availabl
 Available filters are Name, Category, and Tag. Whilst you can paginate the response by setting an offset and limit. Results are ordered by Name alphabetically ascending.
 
 ## Installation
-- Run BeerQuest.sql on your localhost T-SQL instnace
+- Run BeerQuestDB.sql on your localhost T-SQL instnace
 - Make sure Docker is installed and correctly set-up on your PC (Docker Desktop set-up can be found at https://docs.docker.com/desktop/)
 - Use you favourite IDE to open and inspect the code before running it.
 - Run the application and view the documentation at the base url or /index.html
