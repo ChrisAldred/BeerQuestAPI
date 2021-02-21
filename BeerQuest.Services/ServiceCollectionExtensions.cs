@@ -8,6 +8,7 @@ namespace BeerQuest.Services
         public static void AddBeerQuestServices(this IServiceCollection services)
         {
             services.AddDatabaseProvider();
+            services.AddTransient<IBusinessService, BusinessService>();
         }
     }
 }

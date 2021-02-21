@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BeerQuest.Models\BeerQuest.Models.csproj" />
-    <ProjectReference Include="..\BeerQuest.Providers\BeerQuest.Providers.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
 </Project>

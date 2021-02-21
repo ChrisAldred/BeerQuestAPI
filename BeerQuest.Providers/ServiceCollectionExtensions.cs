@@ -12,6 +12,7 @@ namespace BeerQuest.Providers
             services.AddTransient<IConnectionStringBuilder, ConnectionStringBuilder>();
             services.AddScoped<IDataRepository, DataRepository>();
             services.AddTransient<IExceptionProvider, ExceptionProvider>();
+            services.AddTransient<IBusinessProvider, BusinessProvider>();
         }
     }
 }

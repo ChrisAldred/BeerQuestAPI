@@ -7,16 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.12" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\BeerQuest.Models\BeerQuest.Models.csproj" />
     <ProjectReference Include="..\BeerQuest.Services\BeerQuest.Services.csproj" />
   </ItemGroup>
 

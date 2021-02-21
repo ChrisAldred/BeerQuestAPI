@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 
 namespace BeerQuest.API
 {
@@ -19,21 +20,23 @@ namespace BeerQuest.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRouting(o => o.LowercaseUrls = true);
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                );
             services.AddSwaggerGen();
             services.AddConnectionContextResolvers();
             services.AddTransient<IExceptionLogger, ExceptionLogger>();
             services.AddBeerQuestServices();
+            services.AddSwaggerGen(x =>
+            {
+                x.SwaggerDoc("v1", new OpenApiInfo { Title = "Beer Quest API", Version = "v1" });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env)
         {
             app.UseSwagger();
-            app.UseSwaggerUI(c => 
-            { 
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Beer Quest API"); 
-                c.RoutePrefix = string.Empty; 
-            });
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -56,6 +59,12 @@ namespace BeerQuest.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Beer Quest API");
+                c.RoutePrefix = string.Empty;
             });
         }
     }

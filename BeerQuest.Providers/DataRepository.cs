@@ -26,7 +26,8 @@ namespace BeerQuest.Providers
                 procedureName,
                 param,
                 null,
-                null
+                null,
+                CommandType.StoredProcedure
             );
 
             return rows.ToArray();
@@ -38,7 +39,8 @@ namespace BeerQuest.Providers
                 procedureName,
                 param,
                 null,
-                null
+                null,
+                CommandType.StoredProcedure
             );
         }
 
