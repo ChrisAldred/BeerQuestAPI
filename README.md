@@ -10,6 +10,19 @@ Available filters are Name, Category, and Tag. Whilst you can paginate the respo
 - Use you favourite IDE to open and inspect the code before running it.
 - Run the application and view the documentation at the base url or /index.html
 
+## Usage
+There is one POST endpoint "/api/business" which takes a request body that conatins the following nullable attributes:
+```json
+{
+  "name": "atlas",
+  "category": "bar",
+  "tag": "coffee",
+  "offset": 0,
+  "limit": 1000
+}
+```
+Whilst it is highly unusual to implement a POST endpoint which returns large amounts of data, this avoids violating the HTTP 1.1 spec. THis specifies that no indentifiable information should be placed in the request body of a GET statement, and also allowing easily nullable request parameters wiithout duplicating routes, and methods on the controller. Further reading can be found at https://tools.ietf.org/html/rfc7231#page-24
+
 ## Return Object
 ### Populated Array
 ```json
