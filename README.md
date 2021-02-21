@@ -11,35 +11,63 @@ Available filters are Name, Category, and Tag. Whilst you can paginate the respo
 - Run the application and view the documentation at the base url or /index.html
 
 ## Return Object
+### Populated Array
 ```json
 {
   "offset": 0,
   "limit": 0,
   "businessCollection": [
     {
-      "id": 0,
-      "name": "string",
-      "category": "string",
-      "url": "string",
-      "date": "2021-02-21T14:20:16.418Z",
-      "excerpt": "string",
-      "thumbnail": "string",
-      "lat": 0,
-      "lng": 0,
-      "address": "string",
-      "phone": "string",
-      "twitter": "string",
+      "id": 2,
+      "name": "\"golf\" cafe bar",
+      "category": "bar reviews",
+      "url": "http://leedsbeer.info/?p=1382",
+      "date": "2013-04-27T15:44:22+01:00",
+      "excerpt": "FORE! You can play \"golf\" here and enjoy a nice bottled ale. ",
+      "thumbnail": "http://leedsbeer.info/wp-content/uploads/2013/04/20130422_204442.jpg",
+      "lat": 53.793495,
+      "lng": -1.5478653,
+      "address": "1 Little Neville Street, Granary Wharf, Leeds LS1 4ED",
+      "phone": "0113 244 4428",
+      "twitter": "GolfCafeBar",
       "starsBeer": 0,
-      "starsAtmosphere": 0,
-      "starsAmenities": 0,
-      "starsValue": 0,
-      "tags": "string",
-      "totalRows": 0
+      "starsAtmosphere": 2.5,
+      "starsAmenities": 3.5,
+      "starsValue": 2.5,
+      "tags": "beer garden,coffee,food,free wifi,sports",
+      "totalRows": 242
+    },
+    {
+      "id": 5,
+      "name": "314 in progress",
+      "category": "bar reviews",
+      "url": "http://leedsbeer.info/?p=3048",
+      "date": "2015-03-24T20:31:30+00:00",
+      "excerpt": "This fashionable cocktail bar & club isn't really our scene but has surprisingly good beer.",
+      "thumbnail": "http://leedsbeer.info/wp-content/uploads/2015/03/IMG_20150209_175103005.jpg",
+      "lat": 53.80072,
+      "lng": -1.5483344,
+      "address": "25 Great George Street, Leeds LS1 3AL",
+      "phone": "0113 397 1337",
+      "twitter": "314Leeds",
+      "starsBeer": 0,
+      "starsAtmosphere": 2.5,
+      "starsAmenities": 1.5,
+      "starsValue": 2,
+      "tags": "dance floor",
+      "totalRows": 242
     }
   ]
 }
 ```
-
+### Empty Array
+```json
+{
+  "offset": 0,
+  "Limit": 100,
+  "businessCollection": []
+}
+```
 ## Query Parameters
 ### Name
 You can filter on Name, which will match on partial and complete words. It is a case insensitive search, but does require symbols and accents to be specified correctly.
