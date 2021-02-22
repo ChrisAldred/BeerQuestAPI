@@ -7,7 +7,7 @@ Available filters are Name, Category, and Tag. Whilst you can paginate the respo
 ## Installation
 - Run BeerQuestDB.sql on your localhost T-SQL instnace
 - Make sure Docker is installed and correctly set-up on your PC (Docker Desktop set-up can be found at https://docs.docker.com/desktop/)
-- Use you favourite IDE to open and inspect the code before running it.
+- Use you favourite IDE to open and inspect the code, and edit the connection string in the appsettings.json file, before running it.
 - Run the application and view the documentation at the base url or /index.html
 
 ## Usage
