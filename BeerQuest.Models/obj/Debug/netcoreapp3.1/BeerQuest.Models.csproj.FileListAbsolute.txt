@@ -1,0 +1,9 @@
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\bin\Debug\netcoreapp3.1\BeerQuest.Models.deps.json
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\bin\Debug\netcoreapp3.1\BeerQuest.Models.dll
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\bin\Debug\netcoreapp3.1\BeerQuest.Models.pdb
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\obj\Debug\netcoreapp3.1\BeerQuest.Models.csprojAssemblyReference.cache
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\obj\Debug\netcoreapp3.1\BeerQuest.Models.AssemblyInfoInputs.cache
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\obj\Debug\netcoreapp3.1\BeerQuest.Models.AssemblyInfo.cs
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\obj\Debug\netcoreapp3.1\BeerQuest.Models.csproj.CoreCompileInputs.cache
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\obj\Debug\netcoreapp3.1\BeerQuest.Models.dll
+C:\Users\Chris\source\repos\BeerQuestAPI\BeerQuest.Models\obj\Debug\netcoreapp3.1\BeerQuest.Models.pdb

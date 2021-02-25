@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "o5vtgtel4C7iD/KcSRI3nuPKK+R68LzD0UiyENkUn2bgKe6sG28mjYs5wK85BKrfHjHavjS/3Mfxqck6eBHNrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Chris\\source\\repos\\BeerQuestAPI\\BeerQuest.Models\\BeerQuest.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Chris\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
